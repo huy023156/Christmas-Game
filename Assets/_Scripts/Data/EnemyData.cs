@@ -43,13 +43,14 @@ public class EnemyData : BaseData {
     public static EnemyData[] ConvertStringToEnemiesArray(string enemiesString) {
         EnemyData[] enemiesArray = new EnemyData[enemiesString.Length];
 
-        foreach (char enemySymbol in enemiesString) {
+        for (int i = 0; i < enemiesString.Length; i++) {
+            char enemySymbol = enemiesString[i];
             if (!symbolToEnemyDataDict.TryGetValue(enemySymbol.ToString(), out EnemyData enemyData)) {
                 Debug.LogError($"Enemy symbol '{enemySymbol}' not found in symbolToEnemyDataDict.");
                 continue;
             }
 
-            enemiesArray[enemiesString.IndexOf(enemySymbol)] = enemyData;
+            enemiesArray[i] = enemyData;
         }
 
         return enemiesArray;
