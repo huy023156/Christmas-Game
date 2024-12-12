@@ -6,6 +6,8 @@ public class LabelManager : Singleton<LabelManager> {
         Circle,
         Vertical,
         Horizontal,
+        V,
+        W
     }
 
     public LabelType GetRandomLabelType() {

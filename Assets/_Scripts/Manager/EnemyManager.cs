@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnemyManager : Singleton<EnemyManager> {
@@ -6,6 +8,7 @@ public class EnemyManager : Singleton<EnemyManager> {
     private PhaseData currentPhaseData;
     private int currentPhaseIndex;
     private int totalPhaseAmount;
+    private int enemyRemainingAmount;
 
     private List<EnemyBase> enemies;
 
@@ -14,6 +17,15 @@ public class EnemyManager : Singleton<EnemyManager> {
     float spawnTimerMax = 2f; // Set the spawn timer interval
     float spawnTimer = 0f;
     private float timer;
+
+    private void OnEnable() {
+        EventDispatcher.Add<EventDefine.OnEnemyDead>(OnEnemyDead);
+    }
+
+    private void OnDisable() {
+        EventDispatcher.Remove<EventDefine.OnEnemyDead>(OnEnemyDead);
+    }
+
 
     private void Awake() {
         enemies = new List<EnemyBase>();
@@ -25,8 +37,9 @@ public class EnemyManager : Singleton<EnemyManager> {
         SpawnEnemyByPhase(levelData.phases[currentPhaseIndex]);
     }
 
-    private void SpawnEnemyByPhase(PhaseData phaseData) {
+    private async void SpawnEnemyByPhase(PhaseData phaseData) {
         currentPhaseData = phaseData;
+        enemyRemainingAmount = currentPhaseData.enemies.Length;
 
         // Setup
         Camera camera = Camera.main;
@@ -35,13 +48,17 @@ public class EnemyManager : Singleton<EnemyManager> {
         
         for (int i = 0; i < phaseData.enemies.Length; i++) {
             float spawnX = Random.Range(-spawnRange, spawnRange);
-            Vector3 spawnPosition = new Vector3(spawnX, spawnPivotTransform.position.y, spawnPivotTransform.position.z);
-            Debug.Log(phaseData.enemies[i].PrefabName);
-            GameObject enemyObject = Instantiate(Resources.Load<GameObject>(phaseData.enemies[i].PrefabName), spawnPosition, Quaternion.identity, spawnPivotTransform);
-            EnemyBase enemy = enemyObject.GetComponent<EnemyBase>();
-            enemy.SetUp(LabelManager.Instance.GetRandomLabelType());
-            enemies.Add(enemy);
+            await SpawnEnemy(phaseData.enemies[i], spawnX);
         }
+    }
+
+    private async Awaitable SpawnEnemy(EnemyData enemyData, float spawnX) {
+        await Awaitable.WaitForSecondsAsync(Random.Range(2f, 3f)); 
+        Vector3 spawnPosition = new Vector3(spawnX, spawnPivotTransform.position.y, spawnPivotTransform.position.z);
+        GameObject enemyObject = Instantiate(Resources.Load<GameObject>(enemyData.PrefabName), spawnPosition, Quaternion.identity, spawnPivotTransform);
+        EnemyBase enemy = enemyObject.GetComponent<EnemyBase>();
+        enemy.SetUp(enemyData);
+        enemies.Add(enemy);
     }
 
     private void CheckWinCondition() {
@@ -56,27 +73,25 @@ public class EnemyManager : Singleton<EnemyManager> {
         }
     }
 
-    public bool CheckLabelInEnemies(LabelManager.LabelType labelType) {
-        bool found = false;
-        
+    public void CheckLabelInEnemies(LabelManager.LabelType labelType) {
         List<EnemyBase> enemiesToRemove = new List<EnemyBase>();
-
-        foreach (EnemyBase enemy in enemies) {
-            if (enemy.LabelType == labelType) {
-                enemy.Hit();
-                enemiesToRemove.Add(enemy);
-                found = true;
-            }
+        List<EnemyBase> enemyCopy = new List<EnemyBase>(enemies);
+        
+        foreach (EnemyBase enemy in enemyCopy) {
+            enemy.CheckBalloon(labelType);
         }
+    }
 
-        foreach (EnemyBase enemy in enemiesToRemove) {
-            enemies.Remove(enemy);
-        }
-
-        if (enemies.Count == 0) {
+    private void OnEnemyDead(IEventParam param)
+    {
+        EventDefine.OnEnemyDead _param = (EventDefine.OnEnemyDead)param;
+        enemies.Remove(_param.enemy);
+        enemyRemainingAmount--;
+        Debug.Log("EnemyDead");
+        if (enemyRemainingAmount <= 0) {
             CheckWinCondition();
         }
 
-        return found;
-    } 
+    }
+
 }

@@ -1,6 +1,13 @@
 public partial class EventDefine: IEventParam {
-    public struct OnGameSpeedChanged: IEventParam {
-        public int speed;
+    public struct OnPointsAdded: IEventParam {
+        public int points;
     }
 
+    public struct OnEnemyDead: IEventParam { 
+        public EnemyBase enemy;
+    }
+
+    public struct OnWinGame: IEventParam { }
+
+    public struct OnLoseGame: IEventParam { }
 }

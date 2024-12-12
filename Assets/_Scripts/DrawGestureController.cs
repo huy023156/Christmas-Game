@@ -1,15 +1,20 @@
+using System;
 using GestureRecognizer;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DrawGestureController : MonoBehaviour, IPointerClickHandler, IDragHandler, IEndDragHandler {
+public class DrawGestureController : MonoBehaviour {
 
     private DrawDetector drawDetector;
-
-    private float lastClickTime = 0f; // Thời gian nhấn trước đó
-	private const float doubleClickThreshold = 0.1f; // Ngưỡng thời gian cho nhấn hai lần
-
 	private bool isDragging;
+
+    private void OnEnable() {
+        EventDispatcher.Add<EventDefine.OnEnemyDead>(OnEnemyDead);
+    }
+
+    private void OnDisable() {
+        EventDispatcher.Remove<EventDefine.OnEnemyDead>(OnEnemyDead);
+    }
 
     private void Awake() {
         drawDetector = GetComponent<DrawDetector>();
@@ -23,27 +28,11 @@ public class DrawGestureController : MonoBehaviour, IPointerClickHandler, IDragH
         Debug.Log("Recognized :" + result.gesture.id);
 
         LabelManager.LabelType labelTypeFound = LabelManager.Instance.GetLabelTypeByString(result.gesture.id);
-        if (EnemyManager.Instance.CheckLabelInEnemies(labelTypeFound)) {
-            drawDetector.ClearLines();
-        }
+        EnemyManager.Instance.CheckLabelInEnemies(labelTypeFound);
 	}
 
-    public void OnPointerClick (PointerEventData eventData) {
-		if (isDragging) 
-			return;
-
-		if (eventData.clickCount == 2 || (eventData.clickCount == 1 && Time.time - lastClickTime < doubleClickThreshold)) {
-			drawDetector.ClearLines();
-		}
-
-		lastClickTime = Time.time;
-	}
-
-    public void OnDrag(PointerEventData eventData) {
-        isDragging = true;
-    }
-
-    public void OnEndDrag(PointerEventData eventData) {
-		isDragging = false;
+    private void OnEnemyDead(IEventParam param)
+    {
+        drawDetector.ClearLines();
     }
 }
