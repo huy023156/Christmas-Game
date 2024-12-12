@@ -7,6 +7,10 @@ public partial class EventDefine: IEventParam {
         public EnemyBase enemy;
     }
 
+    public struct OnLabelRecognized: IEventParam {
+        public LabelManager.LabelType labelType;
+    }
+
     public struct OnWinGame: IEventParam { }
 
     public struct OnLoseGame: IEventParam { }

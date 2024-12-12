@@ -7,7 +7,6 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 namespace GestureRecognizer {
-
 	/// <summary>
 	/// Captures player drawing and call the Recognizer to discover which gesture player id.
 	/// Calls 'OnRecognize' event when something is recognized.

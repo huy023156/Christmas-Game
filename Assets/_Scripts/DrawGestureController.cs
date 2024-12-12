@@ -1,10 +1,7 @@
-using System;
 using GestureRecognizer;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class DrawGestureController : MonoBehaviour {
-
     private DrawDetector drawDetector;
 
     private void OnEnable() {
@@ -27,7 +24,8 @@ public class DrawGestureController : MonoBehaviour {
         Debug.Log("Recognized :" + result.gesture.id);
 
         LabelManager.LabelType labelTypeFound = LabelManager.Instance.GetLabelTypeByString(result.gesture.id);
-        EnemyManager.Instance.CheckLabelInEnemies(labelTypeFound);
+        EventDispatcher.Dispatch(new EventDefine.OnLabelRecognized { labelType = labelTypeFound});
+        //EnemyManager.Instance.CheckLabelInEnemies(labelTypeFound);
 	}
 
     private void OnEnemyDead(IEventParam param)

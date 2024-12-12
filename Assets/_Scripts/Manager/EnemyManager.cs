@@ -73,15 +73,6 @@ public class EnemyManager : Singleton<EnemyManager> {
         }
     }
 
-    public void CheckLabelInEnemies(LabelManager.LabelType labelType) {
-        List<EnemyBase> enemiesToRemove = new List<EnemyBase>();
-        List<EnemyBase> enemyCopy = new List<EnemyBase>(enemies);
-        
-        foreach (EnemyBase enemy in enemyCopy) {
-            enemy.CheckBalloon(labelType);
-        }
-    }
-
     private void OnEnemyDead(IEventParam param)
     {
         EventDefine.OnEnemyDead _param = (EventDefine.OnEnemyDead)param;

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -14,6 +15,15 @@ public class EnemyBase : MonoBehaviour {
 
     private BoxCollider2D boxCollider2D;
     private Rigidbody2D rb;
+
+    private void OnEnable() {
+        EventDispatcher.Add<EventDefine.OnLabelRecognized>(OnLabelRecognized);
+    }
+
+    private void OnDisable() {
+        EventDispatcher.Remove<EventDefine.OnLabelRecognized>(OnLabelRecognized);
+    }
+
 
     public void SetUp(EnemyData enemyData) {
         boxCollider2D = GetComponent<BoxCollider2D>();
@@ -45,19 +55,6 @@ public class EnemyBase : MonoBehaviour {
 
     }
 
-    public virtual void CheckBalloon(LabelManager.LabelType labelType) {
-        foreach (Balloon balloon in balloonArray) {
-            if (balloon.labelType == labelType) {
-                labelCount--;
-                Destroy(balloon.gameObject);
-                Hit();
-                if (labelCount <= 0) {
-                    Die();
-                }
-            }
-        }
-    }
-
     public virtual void Hit() {
     }
 
@@ -77,7 +74,33 @@ public class EnemyBase : MonoBehaviour {
     }
 
     public virtual void Explode(Vector3 position) {
+        Debug.Log("COINT BURSTTTTTTTTT");
         Destroy(gameObject);
-        Instantiate(Resources.Load<Transform>("COIN_BURST"), position + Vector3.up, quaternion.identity);
+    }
+
+    private void OnLabelRecognized(IEventParam param) {
+        if (isDead) {
+            return;
+        }
+
+        EventDefine.OnLabelRecognized _param = (EventDefine.OnLabelRecognized)param;
+
+        List<Balloon> balloonToRemove = new List<Balloon>();
+
+        foreach (Balloon balloon in balloonArray) {
+            if (balloon != null && balloon.labelType == _param.labelType) {
+                labelCount--;
+                Destroy(balloon.gameObject);
+                Hit();
+                if (labelCount <= 0) {
+                    Die();
+                }
+            }
+        }
+
+        // foreach (Balloon balloon in balloonToRemove) {
+        //     balloonArray.
+        //     Destroy(balloon);
+        // }
     }
 }
