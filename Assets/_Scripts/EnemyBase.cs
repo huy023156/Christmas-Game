@@ -67,7 +67,6 @@ public class EnemyBase : MonoBehaviour {
         giftTransform.GetComponent<Rigidbody2D>().gravityScale = 1;
         EventDispatcher.Dispatch(new EventDefine.OnEnemyDead { enemy = this });
         EventDispatcher.Dispatch(new EventDefine.OnPointsAdded { points = enemyData.labelCount} );
-
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

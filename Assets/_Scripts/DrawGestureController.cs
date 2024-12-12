@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 public class DrawGestureController : MonoBehaviour {
 
     private DrawDetector drawDetector;
-	private bool isDragging;
 
     private void OnEnable() {
         EventDispatcher.Add<EventDefine.OnEnemyDead>(OnEnemyDead);
