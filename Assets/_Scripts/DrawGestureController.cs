@@ -14,6 +14,7 @@ public class DrawGestureController : MonoBehaviour {
 
     private void Awake() {
         drawDetector = GetComponent<DrawDetector>();
+
     }
 
     public void OnRecognize(RecognitionResult result) {
@@ -24,8 +25,7 @@ public class DrawGestureController : MonoBehaviour {
         Debug.Log("Recognized :" + result.gesture.id);
 
         LabelManager.LabelType labelTypeFound = LabelManager.Instance.GetLabelTypeByString(result.gesture.id);
-        EventDispatcher.Dispatch(new EventDefine.OnLabelRecognized { labelType = labelTypeFound});
-        //EnemyManager.Instance.CheckLabelInEnemies(labelTypeFound);
+        EventDispatcher.Dispatch(new EventDefine.OnLabelRecognized { labelType = labelTypeFound });
 	}
 
     private void OnEnemyDead(IEventParam param)

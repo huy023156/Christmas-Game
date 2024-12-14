@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnemyManager : Singleton<EnemyManager> {
@@ -11,12 +10,6 @@ public class EnemyManager : Singleton<EnemyManager> {
     private int enemyRemainingAmount;
 
     private List<EnemyBase> enemies;
-
-    [SerializeField] private Transform spawnPivotTransform;
-
-    float spawnTimerMax = 2f; // Set the spawn timer interval
-    float spawnTimer = 0f;
-    private float timer;
 
     private void OnEnable() {
         EventDispatcher.Add<EventDefine.OnEnemyDead>(OnEnemyDead);
@@ -34,28 +27,22 @@ public class EnemyManager : Singleton<EnemyManager> {
     public void InitiateLevel(LevelData levelData) {
         currentLevelData = levelData;
         totalPhaseAmount = levelData.phases.Length;
-        SpawnEnemyByPhase(levelData.phases[currentPhaseIndex]);
+        StartCoroutine(SpawnEnemyByPhase(levelData.phases[currentPhaseIndex]));
     }
 
-    private async void SpawnEnemyByPhase(PhaseData phaseData) {
+    private IEnumerator SpawnEnemyByPhase(PhaseData phaseData) {
         currentPhaseData = phaseData;
         enemyRemainingAmount = currentPhaseData.enemies.Length;
 
-        // Setup
-        Camera camera = Camera.main;
-        Vector3 leftEdge = camera.ScreenToWorldPoint(new Vector2(0, 0));
-        float spawnRange = Mathf.Abs(leftEdge.x) - 0.3f;
         
         for (int i = 0; i < phaseData.enemies.Length; i++) {
-            float spawnX = Random.Range(-spawnRange, spawnRange);
-            await SpawnEnemy(phaseData.enemies[i], spawnX);
+            yield return StartCoroutine(SpawnEnemy(phaseData.enemies[i]));
         }
     }
 
-    private async Awaitable SpawnEnemy(EnemyData enemyData, float spawnX) {
-        await Awaitable.WaitForSecondsAsync(Random.Range(2f, 3f)); 
-        Vector3 spawnPosition = new Vector3(spawnX, spawnPivotTransform.position.y, spawnPivotTransform.position.z);
-        GameObject enemyObject = Instantiate(Resources.Load<GameObject>(enemyData.PrefabName), spawnPosition, Quaternion.identity, spawnPivotTransform);
+    private IEnumerator SpawnEnemy(EnemyData enemyData) {
+        yield return new WaitForSeconds(Random.Range(2f, 3f)); 
+        GameObject enemyObject = Instantiate(Resources.Load<GameObject>(enemyData.PrefabName), transform);
         EnemyBase enemy = enemyObject.GetComponent<EnemyBase>();
         enemy.SetUp(enemyData);
         enemies.Add(enemy);
@@ -65,11 +52,11 @@ public class EnemyManager : Singleton<EnemyManager> {
         currentPhaseIndex++;
 
         if (currentPhaseIndex >= totalPhaseAmount) {
-            // TODO: win level
+            EventDispatcher.Dispatch(new EventDefine.OnWinGame());
             Debug.Log("Defeat all phases, level ended");
             return;
         } else {
-            SpawnEnemyByPhase(currentLevelData.phases[currentPhaseIndex]);
+            StartCoroutine(SpawnEnemyByPhase(currentLevelData.phases[currentPhaseIndex]));
         }
     }
 
@@ -78,11 +65,21 @@ public class EnemyManager : Singleton<EnemyManager> {
         EventDefine.OnEnemyDead _param = (EventDefine.OnEnemyDead)param;
         enemies.Remove(_param.enemy);
         enemyRemainingAmount--;
-        Debug.Log("EnemyDead");
         if (enemyRemainingAmount <= 0) {
             CheckWinCondition();
         }
-
     }
 
+    public void ClearEnemies() {
+        StopAllCoroutines();
+
+        foreach (var enemy in enemies) {
+            if (enemy != null) {
+                Destroy(enemy.gameObject);
+            }
+        }
+
+        enemies.Clear();
+        enemyRemainingAmount = 0;
+    }
 }

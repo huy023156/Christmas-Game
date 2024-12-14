@@ -8,6 +8,7 @@ public class Gift : MonoBehaviour {
         if (other.transform.TryGetComponent(out DeadZone deadZone)){
             if (enemy.IsDead && !hasInstantiated) { 
                 hasInstantiated = true; 
+                ScreenShake.Instance.Shake(0.5f, 0.5f);
                 Instantiate(Resources.Load<Transform>("COIN_BURST"), transform.position + Vector3.up, Quaternion.identity);
                 Destroy(gameObject);
                 Destroy(enemy.gameObject);

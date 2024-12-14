@@ -13,6 +13,7 @@ public static class PlayerData {
             return PlayerPrefs.GetInt("CurrentLevel", 1);
         }
         set {
+            Debug.Log("Current Level changed to level " + value);
             PlayerPrefs.SetInt("CurrentLevel", value);
         }
     }
@@ -38,7 +39,7 @@ public static class PlayerData {
                 return;
         }
 
-        Debug.Log($"PlayerData.DecreaseLevel() Increase to Level {CurrentLevel}");
+        Debug.Log($"PlayerData.IncreaseLevel() Increase to Level {CurrentLevel}");
 
         bool isUnlockingNewLevel = CurrentLevel > NewestLevel;
 
@@ -112,6 +113,11 @@ public static class PlayerData {
         set {
             PlayerPrefs.SetInt("GameSpeed", value);
         }
+    }
+
+    public static void ResetData() {
+        CurrentLevel = 1;
+        NewestLevel = 1;
     }
 
     #endregion Settings

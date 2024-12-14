@@ -58,7 +58,7 @@ public class EventDispatcher: MonoBehaviour {
     public void DispatchEvent<T>(T eventParam) where T : IEventParam {
         Type eventType = typeof(T);
         if(eventDictionary.TryGetValue(eventType,out Action<IEventParam> thisEvent)) {
-            thisEvent.Invoke(eventParam);
+            thisEvent?.Invoke(eventParam);
         }
     }
 
