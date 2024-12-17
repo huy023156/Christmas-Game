@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.116}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -227,8 +227,18 @@ MonoBehaviour:
   patterns:
   - {fileID: 11400000, guid: bf497a22653ed0c4488be8228747f054, type: 2}
   - {fileID: 11400000, guid: 87570d48f52c96d459f9ce9ccc76cd6f, type: 2}
-  - {fileID: 11400000, guid: 4344cfe571d824d47b4bc6987c0c4abc, type: 2}
+  - {fileID: 11400000, guid: 151dc74e7d5521943af6e1b2a0064eda, type: 2}
+  - {fileID: 11400000, guid: 4ef63038d6d9b7d4c86100e1ac7c12de, type: 2}
+  - {fileID: 11400000, guid: 0bc48e75063e4ee40ba990b3feba44f8, type: 2}
+  - {fileID: 11400000, guid: ba6166ce43b173a45980971160d8f717, type: 2}
   - {fileID: 11400000, guid: ae72476a88ed11341bfa4ca1a9ecd6c7, type: 2}
+  - {fileID: 11400000, guid: 7b7373ad8cab5c14da63cdf41ca6bfb4, type: 2}
+  - {fileID: 11400000, guid: cd870f711678c0e4991e8346c26ff920, type: 2}
+  - {fileID: 11400000, guid: cc8020934b6c2e0489266ce77b1acb5d, type: 2}
+  - {fileID: 11400000, guid: d674a08a60ff8d44e83ffbd757c4f099, type: 2}
+  - {fileID: 11400000, guid: c1474251833a7dd40a6f769718c47e03, type: 2}
+  - {fileID: 11400000, guid: edec3322e26b606499fa750ba48fb1bf, type: 2}
+  - {fileID: 11400000, guid: 5dc35e6068fc10a45b81ac5f43b72a51, type: 2}
 --- !u!114 &6535623738414653534
 MonoBehaviour:
   m_ObjectHideFlags: 0

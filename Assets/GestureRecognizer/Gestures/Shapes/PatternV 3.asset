@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ce0fdb4e39b5744abf0c061bd2a3e30, type: 3}
-  m_Name: PatternSquare
+  m_Name: PatternV 3
   m_EditorClassIdentifier: 
-  id: Square
+  id: V
   points: []
   gesture:
     lines:
     - points:
-      - {x: 0.25, y: 0.75}
-      - {x: 0.25, y: 0.25}
-      - {x: 0.75, y: 0.25}
-      - {x: 0.75, y: 0.75}
-      - {x: 0.25, y: 0.75}
-      closedLine: 1
+      - {x: 0.4278607, y: 0.43283582}
+      - {x: 0.5, y: 0.25}
+      - {x: 0.6467662, y: 0.54029834}
+      closedLine: 0
   useLinesOrder: 0
   useLinesDirections: 0

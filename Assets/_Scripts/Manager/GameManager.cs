@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GestureRecognizer;
 using TMPro;
 using UnityEngine;
@@ -12,6 +13,11 @@ public class GameManager : Singleton<GameManager> {
 
     private bool isGameEnded = false;
     public bool IsGameEnded => isGameEnded;
+
+    private float difficultyMultiplier = 1;
+    private float speedDifficulty = 1;
+    private float globalSpeedMultiplier = 1;
+    public float GlobalSpeedMultiplier => globalSpeedMultiplier;
 
     // UI
     [SerializeField] private PointsUI pointsUI;
@@ -37,6 +43,28 @@ public class GameManager : Singleton<GameManager> {
         Time.timeScale = 1;
         levelXText.text = "Level " + currentLevel;
         EnemyManager.Instance.InitiateLevel(currentLevelData);
+    }
+    
+    private void Update() {
+        HandleDifficulty();
+    }
+
+    private float difficultyTimer = 0f;
+
+    private void HandleDifficulty() {
+        difficultyTimer += Time.deltaTime;
+        
+        if (difficultyTimer >= 5f) {
+            EnemyData.enemyDataProbabilityDict[EnemyData.single] -= 1;
+            EnemyData.enemyDataProbabilityDict[EnemyData.triple] -= 1;
+            EnemyData.enemyDataProbabilityDict[EnemyData.triple] += 4;
+            EnemyData.enemyDataProbabilityDict[EnemyData.triple] += 2;
+            EnemyData.enemyDataProbabilityDict[EnemyData.quintuple] += 1;
+            
+            difficultyMultiplier += 0.2f;
+            globalSpeedMultiplier += 0.005f;
+            difficultyTimer = 0f; 
+        }
     }
 
     private void OnPointsAdded(IEventParam param) {

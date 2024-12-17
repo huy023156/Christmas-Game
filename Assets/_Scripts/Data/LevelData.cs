@@ -1,9 +1,9 @@
 public class LevelData : BaseData {
     public float speedMultiplier = 1f; 
-    public PhaseData[] phases;
+    public int pointsToWin;
 
-    public LevelData(PhaseData[] phases, float speedMultiplier = 1f) {
-        this.phases = phases;
+    public LevelData(float speedMultiplier = 1f, int pointsToWin = 100) {
         this.speedMultiplier = speedMultiplier;
+        this.pointsToWin = pointsToWin;
     }
 }

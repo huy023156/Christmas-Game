@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class LabelManager : Singleton<LabelManager> {
     public enum LabelType {
-        Square,
         Circle,
         Vertical,
         Horizontal,

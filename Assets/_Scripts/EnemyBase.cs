@@ -32,22 +32,18 @@ public class EnemyBase : MonoBehaviour {
         labelCount = enemyData.labelCount;
         isDead = false;
 
-        // Handle position
-        Camera camera = Camera.main;
-        // Lấy cạnh trên của màn hình
-        float topEdgeY = camera.ScreenToWorldPoint(new Vector3(0, Screen.height, 0)).y;
-        // Thêm khoảng offset để enemy spawn cao hơn màn hình một chút
-        float spawnY = topEdgeY + 2f; 
-        
-        // Tính toán vị trí spawn theo chiều ngang
-        Vector3 leftEdge = camera.ScreenToWorldPoint(new Vector2(0, 0));
-        float spawnRange = Mathf.Abs(leftEdge.x) * 0.7f;
-        float spawnX = Random.Range(-spawnRange, spawnRange);
-        
-        // Set vị trí spawn
-        transform.position = new Vector3(spawnX, spawnY, 0);
+        SetUpPosition();
+        SetUpBalloons();
+    }
 
-        // Handle balloons
+
+    private void Update() {
+        if (isDead) return;
+
+        transform.position += moveSpeed * GameManager.Instance.GlobalSpeedMultiplier * Time.deltaTime * Vector3.down;
+    }
+
+    private void SetUpBalloons() {
         balloonArray = GetComponentsInChildren<Balloon>();
         if (balloonArray.Length != labelCount) {
             Debug.LogError($"Balloon count is {balloonArray.Length}, wrong, check prefab!!");
@@ -69,11 +65,21 @@ public class EnemyBase : MonoBehaviour {
         }
     }
 
-
-    private void Update() {
-        if (isDead) return;
-        transform.position += moveSpeed * Time.deltaTime * Vector3.down;
-
+    private void SetUpPosition() {
+        // Handle position
+        Camera camera = Camera.main;
+        // Lấy cạnh trên của màn hình
+        float topEdgeY = camera.ScreenToWorldPoint(new Vector3(0, Screen.height, 0)).y;
+        // Thêm khoảng offset để enemy spawn cao hơn màn hình một chút
+        float spawnY = topEdgeY + 1f; 
+        
+        // Tính toán vị trí spawn theo chiều ngang
+        Vector3 leftEdge = camera.ScreenToWorldPoint(new Vector2(0, 0));
+        float spawnRange = Mathf.Abs(leftEdge.x) * 0.7f;
+        float spawnX = Random.Range(-spawnRange, spawnRange);
+        
+        // Set vị trí spawn
+        transform.position = new Vector3(spawnX, spawnY, 0);
     }
 
     public virtual void Hit() {

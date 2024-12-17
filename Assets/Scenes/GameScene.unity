@@ -1628,8 +1628,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 278
-  m_fontSizeBase: 278
+  m_fontSize: 147.86
+  m_fontSizeBase: 147.86
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2487,54 +2487,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 405955333}
     m_Modifications:
-    - target: {fileID: 3896445400994011971, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4739890986761640958, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
       propertyPath: m_Name
       value: Draw Gesture
       objectReference: {fileID: 0}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: numberOfThreads
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: patterns.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: bf497a22653ed0c4488be8228747f054, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 87570d48f52c96d459f9ce9ccc76cd6f, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: d42ca0a26e7a4c8458cbad2e32f850e7, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[3]'
-      value: 
-      objectReference: {fileID: 11400000, guid: c109c2936e684ba4d95a193712f53b77, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[4]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 4344cfe571d824d47b4bc6987c0c4abc, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[5]'
-      value: 
-      objectReference: {fileID: 11400000, guid: ba6166ce43b173a45980971160d8f717, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[6]'
-      value: 
-      objectReference: {fileID: 11400000, guid: ae72476a88ed11341bfa4ca1a9ecd6c7, type: 2}
-    - target: {fileID: 6558134886892903333, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
-      propertyPath: 'patterns.Array.data[7]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 5dc35e6068fc10a45b81ac5f43b72a51, type: 2}
     - target: {fileID: 8882992645755521585, guid: 39d486afeaa2c75418a87723e352c546, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2964,8 +2920,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 139.17
-  m_fontSizeBase: 139.17
+  m_fontSize: 83.2
+  m_fontSizeBase: 83.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3223,8 +3179,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 278
-  m_fontSizeBase: 278
+  m_fontSize: 169.2
+  m_fontSizeBase: 169.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3442,8 +3398,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 139.17
-  m_fontSizeBase: 139.17
+  m_fontSize: 83.2
+  m_fontSizeBase: 83.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
