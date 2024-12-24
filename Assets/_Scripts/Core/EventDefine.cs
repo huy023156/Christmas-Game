@@ -11,6 +11,8 @@ public partial class EventDefine: IEventParam {
         public LabelManager.LabelType labelType;
     }
 
+    public struct OnBalloonPopped: IEventParam { }
+
     public struct OnWinGame: IEventParam { }
 
     public struct OnLoseGame: IEventParam { }

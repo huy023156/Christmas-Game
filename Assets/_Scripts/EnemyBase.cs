@@ -61,7 +61,24 @@ public class EnemyBase : MonoBehaviour {
             Debug.Log("Balloon set label type to: " + labelType);
 
             balloon.labelType = labelType;
-            balloon.labelText.text = labelType.ToString();
+
+            switch (labelType) {
+                case LabelManager.LabelType.Circle:
+                    balloon.labelText.text = "O";
+                    break;
+                case LabelManager.LabelType.Vertical:
+                    balloon.labelText.text = "|";
+                    break;
+                case LabelManager.LabelType.Horizontal:
+                    balloon.labelText.text = "—";
+                    break;
+                case LabelManager.LabelType.V:
+                    balloon.labelText.text = LabelManager.LabelType.V.ToString();
+                    break;
+                case LabelManager.LabelType.W:
+                    balloon.labelText.text = LabelManager.LabelType.W.ToString().ToLower();
+                    break;
+            }
         }
     }
 
@@ -119,6 +136,8 @@ public class EnemyBase : MonoBehaviour {
                 labelCount--;
                 Destroy(balloon.gameObject);
                 Hit();
+                EventDispatcher.Dispatch(new EventDefine.OnBalloonPopped());
+                SoundManager.Instance.PlaySound(SoundManager.SoundType.Pop);
                 if (labelCount <= 0) {
                     Die();
                 }

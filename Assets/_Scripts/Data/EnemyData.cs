@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyData : BaseData {
     public string id;
     public int labelCount = 1;
-    public bool isMultiple = true;
     public float speedMultiplier = 1f;
 
     public string Name => $"_ENEMY_{GetAssetName(id)}"; 

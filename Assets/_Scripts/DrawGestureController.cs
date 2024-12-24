@@ -5,11 +5,11 @@ public class DrawGestureController : MonoBehaviour {
     private DrawDetector drawDetector;
 
     private void OnEnable() {
-        EventDispatcher.Add<EventDefine.OnEnemyDead>(OnEnemyDead);
+        EventDispatcher.Add<EventDefine.OnBalloonPopped>(OnBalloonPopped);
     }
 
     private void OnDisable() {
-        EventDispatcher.Remove<EventDefine.OnEnemyDead>(OnEnemyDead);
+        EventDispatcher.Remove<EventDefine.OnBalloonPopped>(OnBalloonPopped);
     }
 
     private void Awake() {
@@ -28,7 +28,7 @@ public class DrawGestureController : MonoBehaviour {
         EventDispatcher.Dispatch(new EventDefine.OnLabelRecognized { labelType = labelTypeFound });
 	}
 
-    private void OnEnemyDead(IEventParam param)
+    private void OnBalloonPopped(IEventParam param)
     {
         drawDetector.ClearLines();
     }

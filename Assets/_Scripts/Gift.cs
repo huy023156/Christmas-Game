@@ -9,6 +9,7 @@ public class Gift : MonoBehaviour {
             if (enemy.IsDead && !hasInstantiated) { 
                 hasInstantiated = true; 
                 ScreenShake.Instance.Shake(0.5f, 0.5f);
+                SoundManager.Instance.PlaySound(SoundManager.SoundType.Destroy, 6f);
                 Instantiate(Resources.Load<Transform>("COIN_BURST"), transform.position + Vector3.up, Quaternion.identity);
                 Destroy(gameObject);
                 Destroy(enemy.gameObject);

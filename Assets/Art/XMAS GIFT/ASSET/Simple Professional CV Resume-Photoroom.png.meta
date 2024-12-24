@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: c01ac470a3fa2424489314a60b140c97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8779467471984313824
+    second: Simple Professional CV Resume-Photoroom_0
+  - first:
+      213: -296087979649034267
+    second: Simple Professional CV Resume-Photoroom_1
+  - first:
+      213: -3180549893954033076
+    second: Simple Professional CV Resume-Photoroom_2
+  - first:
+      213: -1498109245820262612
+    second: Simple Professional CV Resume-Photoroom_3
+  - first:
+      213: 1275088443355949383
+    second: Simple Professional CV Resume-Photoroom_4
+  - first:
+      213: -2932126257600350915
+    second: Simple Professional CV Resume-Photoroom_5
+  - first:
+      213: -1723069104190170583
+    second: Simple Professional CV Resume-Photoroom_6
+  - first:
+      213: 4536405392379891853
+    second: Simple Professional CV Resume-Photoroom_7
+  - first:
+      213: -6742539112563041097
+    second: Simple Professional CV Resume-Photoroom_8
+  - first:
+      213: 4397244763039822020
+    second: Simple Professional CV Resume-Photoroom_9
+  - first:
+      213: -51921689180670646
+    second: Simple Professional CV Resume-Photoroom_10
+  - first:
+      213: -8727440434352650257
+    second: Simple Professional CV Resume-Photoroom_11
+  - first:
+      213: 7424014870998909900
+    second: Simple Professional CV Resume-Photoroom_12
+  - first:
+      213: -9000192414164735553
+    second: Simple Professional CV Resume-Photoroom_13
+  - first:
+      213: 8969543173721280443
+    second: Simple Professional CV Resume-Photoroom_14
+  - first:
+      213: -2201083842258118129
+    second: Simple Professional CV Resume-Photoroom_15
+  - first:
+      213: -9177200255904324856
+    second: Simple Professional CV Resume-Photoroom_16
+  - first:
+      213: 8592707683217479056
+    second: Simple Professional CV Resume-Photoroom_17
+  - first:
+      213: -5754627652755573534
+    second: Simple Professional CV Resume-Photoroom_18
+  - first:
+      213: 7209194719072006333
+    second: Simple Professional CV Resume-Photoroom_19
+  - first:
+      213: -120339476328800185
+    second: Simple Professional CV Resume-Photoroom_20
+  - first:
+      213: 7004595126134270520
+    second: Simple Professional CV Resume-Photoroom_21
+  - first:
+      213: 6610664139846052017
+    second: Simple Professional CV Resume-Photoroom_22
+  - first:
+      213: 2550988137423027738
+    second: Simple Professional CV Resume-Photoroom_23
+  - first:
+      213: 7056828901731569637
+    second: Simple Professional CV Resume-Photoroom_24
+  - first:
+      213: 5029720226682398892
+    second: Simple Professional CV Resume-Photoroom_25
+  - first:
+      213: 290158531750235341
+    second: Simple Professional CV Resume-Photoroom_26
+  - first:
+      213: 4607123956847083420
+    second: Simple Professional CV Resume-Photoroom_27
+  - first:
+      213: 2093987972864153136
+    second: Simple Professional CV Resume-Photoroom_28
+  - first:
+      213: 3259291771281600105
+    second: Simple Professional CV Resume-Photoroom_29
+  - first:
+      213: -2049957720950971714
+    second: Simple Professional CV Resume-Photoroom_30
+  - first:
+      213: 773038569893843454
+    second: Simple Professional CV Resume-Photoroom_31
+  - first:
+      213: -6879664485708673159
+    second: Simple Professional CV Resume-Photoroom_32
+  - first:
+      213: -1468721231492414531
+    second: Simple Professional CV Resume-Photoroom_33
+  - first:
+      213: 8526933278847182833
+    second: Simple Professional CV Resume-Photoroom_34
+  - first:
+      213: 5925059954193764442
+    second: Simple Professional CV Resume-Photoroom_35
+  - first:
+      213: 4665409310328748754
+    second: Simple Professional CV Resume-Photoroom_36
+  - first:
+      213: 8265087799445950225
+    second: Simple Professional CV Resume-Photoroom_37
+  - first:
+      213: 5183295132226593895
+    second: Simple Professional CV Resume-Photoroom_38
+  - first:
+      213: -2547927414837774232
+    second: Simple Professional CV Resume-Photoroom_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1159
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a374f89d0192680800000000000000
+      internalID: -8779467471984313824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1208
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e791ce1d8514ebf0800000000000000
+      internalID: -296087979649034267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1204
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4aa67409ba6cd3d0800000000000000
+      internalID: -3180549893954033076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1102
+        width: 101
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27a7280495a53be0800000000000000
+      internalID: -1498109245820262612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1214
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749ef6bfe2602b110800000000000000
+      internalID: 1275088443355949383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1140
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35b22b24befe47d0800000000000000
+      internalID: -2932126257600350915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1166
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a5b4967cd6618e0800000000000000
+      internalID: -1723069104190170583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1140
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8058f16bac84fe30800000000000000
+      internalID: 4536405392379891853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc908f8660bd62a0800000000000000
+      internalID: -6742539112563041097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1082
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c07f6b70d6260d30800000000000000
+      internalID: 4397244763039822020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1110
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a457f30bf79874ff0800000000000000
+      internalID: -51921689180670646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 936
+        width: 95
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe787083a27e1e680800000000000000
+      internalID: -8727440434352650257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 936
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc38b19e036670760800000000000000
+      internalID: 7424014870998909900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 936
+        width: 67
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9ab833fa4e81380800000000000000
+      internalID: -9000192414164735553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 936
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfcf2b6ef73a7c70800000000000000
+      internalID: 8969543173721280443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 936
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a5a5548ed2471e0800000000000000
+      internalID: -2201083842258118129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 936
+        width: 68
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803e23a7df804a080800000000000000
+      internalID: -9177200255904324856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 936
+        width: 67
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09592fc9c1e6f3770800000000000000
+      internalID: 8592707683217479056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 936
+        width: 138
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e43dde93a47320b0800000000000000
+      internalID: -5754627652755573534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 801
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0b8eaa6643c0460800000000000000
+      internalID: 7209194719072006333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 801
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74027f442e7745ef0800000000000000
+      internalID: -120339476328800185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 801
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a6aa0c722553160800000000000000
+      internalID: 7004595126134270520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 801
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8efe8a20ccdbb50800000000000000
+      internalID: 6610664139846052017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 801
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eb55df13ee66320800000000000000
+      internalID: 2550988137423027738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 801
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef8b685f74eee160800000000000000
+      internalID: 7056828901731569637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 801
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca86007c5e72dc540800000000000000
+      internalID: 5029720226682398892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 801
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc8585b5a9d60400800000000000000
+      internalID: 290158531750235341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 801
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fff0444dacfef30800000000000000
+      internalID: 4607123956847083420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 659
+        width: 355
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036128687f65f0d10800000000000000
+      internalID: 2093987972864153136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Start
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 538
+        width: 364
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ee796f8945b3d20800000000000000
+      internalID: 3259291771281600105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quit
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 409
+        width: 365
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2e52e50561d83e0800000000000000
+      internalID: -2049957720950971714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 229
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1d23ccb726aba00800000000000000
+      internalID: 773038569893843454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 229
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fc67ba9958680a0800000000000000
+      internalID: -6879664485708673159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 229
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db302d252dd0e9be0800000000000000
+      internalID: -1468721231492414531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 229
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7a425b3a0c55670800000000000000
+      internalID: 8526933278847182833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 229
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a509c92d2aa0a3250800000000000000
+      internalID: 5925059954193764442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_36
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 229
+        width: 67
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daf1f1ac0ddeb040800000000000000
+      internalID: 4665409310328748754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_37
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 229
+        width: 78
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f0463309d73b270800000000000000
+      internalID: 8265087799445950225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Simple Professional CV Resume-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 32
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764a062e573cee740800000000000000
+      internalID: 5183295132226593895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 64
+        width: 254
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8687d150481f3acd0800000000000000
+      internalID: -2547927414837774232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lose text
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 229
+        width: 651
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1363d2d543779a54d870901158313c3b
+      internalID: 639581021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 79934a200bdbdfd4c8b7fcbd7468b6e8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Back: -2547927414837774232
+      Lose text: 639581021
+      Quit: -2049957720950971714
+      Start: 3259291771281600105
+      star: -1498109245820262612
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

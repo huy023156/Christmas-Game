@@ -5,9 +5,6 @@ using TMPro;
 using UnityEngine;
 
 public class GameManager : Singleton<GameManager> {
-    private int currentLevel;
-    private LevelData currentLevelData;
-
     private int currentPoints;
     public int CurrentPoints => currentPoints;
 
@@ -22,7 +19,6 @@ public class GameManager : Singleton<GameManager> {
     // UI
     [SerializeField] private PointsUI pointsUI;
     [SerializeField] private GameObject drawUI;
-    [SerializeField] private TextMeshProUGUI levelXText;
 
     private void OnEnable() {
         EventDispatcher.Add<EventDefine.OnPointsAdded>(OnPointsAdded);
@@ -38,11 +34,7 @@ public class GameManager : Singleton<GameManager> {
     }
 
     private void Start() {
-        currentLevel = PlayerData.CurrentLevel;
-        currentLevelData = GameData.levels[currentLevel - 1];
-        Time.timeScale = 1;
-        levelXText.text = "Level " + currentLevel;
-        EnemyManager.Instance.InitiateLevel(currentLevelData);
+        EnemyManager.Instance.InitiateLevel();
     }
     
     private void Update() {
@@ -52,9 +44,9 @@ public class GameManager : Singleton<GameManager> {
     private float difficultyTimer = 0f;
 
     private void HandleDifficulty() {
-        difficultyTimer += Time.deltaTime;
+        difficultyTimer += Time.deltaTime * difficultyMultiplier;
         
-        if (difficultyTimer >= 5f) {
+        if (difficultyTimer >= 10f) {
             EnemyData.enemyDataProbabilityDict[EnemyData.single] -= 1;
             EnemyData.enemyDataProbabilityDict[EnemyData.triple] -= 1;
             EnemyData.enemyDataProbabilityDict[EnemyData.triple] += 4;
@@ -83,10 +75,5 @@ public class GameManager : Singleton<GameManager> {
     private void OnWinGame(IEventParam param) {
         drawUI.SetActive(false);
         isGameEnded = true;
-    }
-
-    [ContextMenu("Reload Data")]
-    public void ReloadData() {
-        PlayerData.ResetData();
     }
 }
