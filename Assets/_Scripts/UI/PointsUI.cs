@@ -1,8 +1,17 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class PointsUI : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI pointsText;
+
+    private void OnEnable() {
+        EventDispatcher.Add<EventDefine.OnLoseGame>(OnLoseGame);
+    }
+
+    private void OnDisable() {
+        EventDispatcher.Remove<EventDefine.OnLoseGame>(OnLoseGame);
+    }
 
     public void SetText(string text) {
         pointsText.text = text;
@@ -11,12 +20,9 @@ public class PointsUI : MonoBehaviour {
     public void CheckForNewHighScore(int score) {
         HighScoreManager.TrySetNewHighScore(score);
     }
-    public class GameLogic : MonoBehaviour {
-    [SerializeField] private PointsUI pointsUI;
-    private int playerScore;
 
-    private void EndGame() {
-        pointsUI.CheckForNewHighScore(playerScore);
+    private void OnLoseGame(IEventParam param)
+    {
+        CheckForNewHighScore(GameManager.Instance.CurrentPoints);
     }
-  }
 }
