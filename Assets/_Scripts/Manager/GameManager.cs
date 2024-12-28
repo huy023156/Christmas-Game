@@ -34,6 +34,7 @@ public class GameManager : Singleton<GameManager> {
     }
 
     private void Start() {
+        StopAllCoroutines();
         EnemyManager.Instance.InitiateLevel();
     }
     
@@ -46,7 +47,7 @@ public class GameManager : Singleton<GameManager> {
     private void HandleDifficulty() {
         difficultyTimer += Time.deltaTime * difficultyMultiplier;
         
-        if (difficultyTimer >= 10f) {
+        if (difficultyTimer >= 2f) {
             EnemyData.enemyDataProbabilityDict[EnemyData.single] -= 1;
             EnemyData.enemyDataProbabilityDict[EnemyData.triple] -= 1;
             EnemyData.enemyDataProbabilityDict[EnemyData.triple] += 4;
@@ -54,7 +55,7 @@ public class GameManager : Singleton<GameManager> {
             EnemyData.enemyDataProbabilityDict[EnemyData.quintuple] += 1;
             
             difficultyMultiplier += 0.2f;
-            globalSpeedMultiplier += 0.005f;
+            globalSpeedMultiplier += 0.0005f;
             difficultyTimer = 0f; 
         }
     }
@@ -68,6 +69,7 @@ public class GameManager : Singleton<GameManager> {
 
     private void OnLoseGame(IEventParam param) {
         Time.timeScale = 0;
+        PlayerData.TrySetNewHighScore(CurrentPoints);
         drawUI.SetActive(false);
         Debug.Log("YOU LOST");
     }

@@ -9,6 +9,6 @@ public class HighScoreDisplay : MonoBehaviour {
     }
 
     public void UpdateHighScoreText() {
-        highScoreText.text = HighScoreManager.HighScore.ToString();
+        highScoreText.text = PlayerData.HighScore.ToString();
     }
 }

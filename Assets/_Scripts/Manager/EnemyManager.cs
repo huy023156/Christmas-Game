@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyManager : Singleton<EnemyManager> {
-    private LevelData currentLevelData;
     private List<EnemyBase> enemies;
     private bool isFirstEnemy = true;
 
